@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CO₂ Footprint Calculator</title>
+  <meta name="description" content="A quick, simple way to estimate the carbon footprint of a home, business, organisation or country.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-9 0 12-4 16-9 16z"/><path d="M4 21c2-5 5-8 9-10"/></svg>
+      <span>CO₂ Footprint Calculator</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav id="progress" class="progress" aria-label="Progress"></nav>
+    <p id="stepText" class="step-text"></p>
+    <div class="stage"><section id="card" class="card" aria-live="polite"></section></div>
+    <div id="nav" class="nav"></div>
+  </main>
+
+  <div id="chat"></div>
+
+  <noscript><p style="padding:24px;text-align:center">Please turn on JavaScript to use this calculator.</p></noscript>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
